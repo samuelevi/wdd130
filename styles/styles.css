@@ -1,5 +1,6 @@
 main {
   max-width: 840px;
+  margin: 0 auto;
 }
 
 aside {
@@ -31,4 +32,5 @@ footer {
   border-top: 1px solid #000;
   text-align: center;
 }
+
 
