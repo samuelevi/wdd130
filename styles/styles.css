@@ -2,8 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
 
-  main {
+main {
   max-width: 840px;
   margin: 0 auto;
 }
@@ -11,6 +12,7 @@
 aside {
   width: 20em;
   text-align: center;
+  position: relative;
 }
 
 aside img {
@@ -49,4 +51,5 @@ footer {
   background-color: #ddd;
   color: #000;
 }
+
 
