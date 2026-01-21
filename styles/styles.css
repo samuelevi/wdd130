@@ -4,6 +4,22 @@
   box-sizing: border-box;
 }
 
+nav {
+  background-color: steelblue;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  padding: 10px;
+  display: block;
+}
+
+h1 {
+  color: steelblue;
+  padding: 0.5rem;
+}
+
 main {
   max-width: 840px;
   margin: 0 auto;
@@ -22,14 +38,17 @@ aside img {
 
 aside h2 {
   position: absolute;
-  top: 47px;
-  left: 150px;
+  top: 35px;
+  left: 125px;
 }
 
 main img {
   width: 150px;
   height: auto;
   float: right;
+  border: 1px solid steelblue;
+  padding: 2px;
+  box-shadow: 0 0 30px gray;
 }
 
 p {
@@ -51,5 +70,3 @@ footer {
   background-color: #ddd;
   color: #000;
 }
-
-
