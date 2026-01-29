@@ -33,7 +33,7 @@ header {
    display: grid;
    grid-template-columns: 150px auto;
    align-items: center;
-   background-color: #e0d0ff;
+   background-color: var(--accent1-color);
    padding: 20px;
 }
 
@@ -185,7 +185,8 @@ footer {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   background-color: #e0d0ff;
+   background-color: var(--accent1-color);
+   color: #fff;
    padding: 20px;
    margin-top: 40px;
 }
