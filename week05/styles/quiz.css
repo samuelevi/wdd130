@@ -6,7 +6,8 @@ body {
    color: #333;
 }
 
-h1 {
+h1,
+footer {
    text-align: center;
    color: #2c3e50;
 }
@@ -67,4 +68,10 @@ button {
 
 button:hover {
    background-color: #2980b9;
+}
+
+footer {
+   margin-top: 40px;
+   font-size: 0.9rem;
+   color: #777;
 }
