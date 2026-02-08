@@ -3,6 +3,10 @@
    --accent1-color: #264653;
    --heading-font: "Times New Roman", "Georgia", serif;
    --body-font: Arial, Helvetica, sans-serif;
+   --white: #ffffff;
+   --black: #000000;
+   --light-gray: #cccccc;
+   --off-white: #f9f9f9;
 }
 
 * {
@@ -23,18 +27,16 @@ footer {
    margin: 0 auto;
 }
 
-/* Global Heading Styles */
 h1,
 h2 {
    font-family: var(--heading-font);
-   color: #fff;
+   color: var(--white);
    background-color: var(--accent1-color);
    text-align: center;
    padding: 10px;
    margin: 20px 0;
 }
 
-/* Header Styles */
 header {
    display: grid;
    grid-template-columns: 150px auto;
@@ -61,7 +63,7 @@ nav ul {
 
 nav a {
    text-decoration: none;
-   color: #fff;
+   color: var(--white);
    padding: 8px 15px;
    font-weight: bold;
    transition: background-color 0.3s;
@@ -129,25 +131,6 @@ nav a:hover {
    font-size: 0.9em;
 }
 
-.hero article {
-   position: absolute;
-   bottom: 30px;
-   left: 20px;
-   right: 20px;
-   background-color: rgba(255, 255, 255, 0.8);
-   padding: 20px;
-   display: flex;
-   align-items: center;
-   border: 1px solid #ccc;
-}
-
-.hero article img {
-   width: 150px;
-   margin-left: 20px;
-   order: 2;
-   float: right;
-}
-
 .hero {
    position: relative;
    margin: 20px 0;
@@ -168,12 +151,29 @@ nav a:hover {
    margin: 0;
 }
 
-/* Main Content Layout */
+.hero article {
+   position: absolute;
+   bottom: 30px;
+   left: 20px;
+   right: 20px;
+   background-color: rgba(255, 255, 255, 0.8);
+   padding: 20px;
+   display: flex;
+   align-items: center;
+   border: 1px solid var(--light-gray);
+}
+
+.hero article img {
+   width: 150px;
+   margin-left: 20px;
+   order: 2;
+   float: right;
+}
+
 main {
    padding: 0 20px;
 }
 
-/* Company Info & Map */
 .company-info {
    margin-bottom: 30px;
 }
@@ -195,12 +195,13 @@ main {
    display: block;
 }
 
-/* Employee Profiles */
+/* Consolidated .profiles-grid rule */
 .profiles-grid {
    display: flex;
    justify-content: space-around;
    gap: 20px;
    margin: 20px 0;
+   width: auto;
 }
 
 .profiles-grid figure {
@@ -219,11 +220,10 @@ main {
    font-weight: bold;
 }
 
-/* Contact Form */
 .contact-form {
-   border: 1px solid #ccc;
+   border: 1px solid var(--light-gray);
    padding: 20px;
-   background-color: #fff;
+   background-color: var(--white);
    margin-bottom: 40px;
 }
 
@@ -239,19 +239,22 @@ main {
 
 .form-group input[type="text"],
 .form-group input[type="email"],
+.form-group input[type="checkbox"],
+.form-group input[type="radio"],
 .form-group textarea {
-   width: 100%;
-   padding: 10px;
-   border: 1px solid #ccc;
+   border: 1px solid var(--light-gray);
    font-family: var(--body-font);
 }
 
-.profiles-grid {
-   width: auto;
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+   width: 100%;
+   padding: 10px;
 }
 
 fieldset {
-   border: 1px solid #ccc;
+   border: 1px solid var(--light-gray);
    padding: 15px;
    margin-bottom: 15px;
 }
@@ -279,7 +282,7 @@ fieldset legend {
 
 .submit-btn {
    background-color: var(--accent1-color);
-   color: white;
+   color: var(--white);
    padding: 12px;
    border: none;
    cursor: pointer;
@@ -293,13 +296,12 @@ fieldset legend {
    background-color: var(--primary-color);
 }
 
-/* Footer Styles */
 footer {
    display: flex;
    justify-content: space-between;
    align-items: center;
    background-color: var(--accent1-color);
-   color: #fff;
+   color: var(--white);
    padding: 20px;
    margin-top: 40px;
 }
@@ -313,5 +315,5 @@ footer {
    width: 40px;
    height: 40px;
    padding: 5px;
-   background-color: #fff;
+   background-color: var(--white);
 }
