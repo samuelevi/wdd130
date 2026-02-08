@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Contact Us RAFTING PLC</title>
+   <meta name="description"
+     content="The page contains contact information relevant to our business and also creates ways for you to reach out to us for inquiries and directions.">
+   <meta name="author" content="Samuel Udueya">
+   <link rel="stylesheet" href="./styles/rafting.css">
+</head>
+
+<body>
+
+   <header>
+      <img src="./images/z-raftingbw.png" alt="WWR Logo">
+
+      <nav>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="trips.html">Trips</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <main>
+
+      <h1>Contact Us</h1>
+
+      <!-- Company Information Section -->
+      <section class="company-info">
+         <h2>Our Location</h2>
+         <p><strong>Address:</strong> 123 River Run Road, Adventure Valley, ID 83201</p>
+         <p><strong>Phone:</strong> (208) 555-0123</p>
+         <p><strong>Email:</strong> info@raftingplc.com</p>
+
+
+         <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2902.75701353641!2d-116.202313684513!3d43.611332979122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54aef8f067676767%3A0x7676767676767676!2sBoise%2C%20ID!5e0!3m2!1sen!2sus!4v1614123456789!5m2!1sen!2sus"
+              width="600" height="450" allowfullscreen="" loading="lazy">
+            </iframe>
+         </div>
+      </section>
+
+
+      <section class="employee-profiles">
+         <h2>Meet Our Team</h2>
+         <div class="profiles-grid">
+            <figure>
+               <img src="./images/employees/emp-1.jpg" alt="John Doe">
+               <figcaption>John Doe - Senior Guide</figcaption>
+            </figure>
+            <figure>
+               <img src="./images/employees/emp-2.jpg" alt="Jane Smith">
+               <figcaption>Jane Smith - Trip Coordinator</figcaption>
+            </figure>
+            <figure>
+               <img src="./images/employees/emp-3.jpg" alt="Mike Johnson">
+               <figcaption>Mike Johnson - Safety Officer</figcaption>
+            </figure>
+         </div>
+      </section>
+
+
+      <section class="contact-form">
+         <h2>Send Us a Message</h2>
+         <form action="#" method="post">
+            <div class="form-group">
+               <label for="name">Name:</label>
+               <input type="text" id="name" name="user_name" required>
+            </div>
+
+            <div class="form-group">
+               <label for="email">Email Address:</label>
+               <input type="email" id="email" name="user_email" required>
+            </div>
+
+            <fieldset>
+               <legend>Purpose of Message:</legend>
+               <label>
+                  <input type="radio" name="purpose" value="general" checked> General Inquiry
+               </label>
+               <label>
+                  <input type="radio" name="purpose" value="reservation"> Reservation Question
+               </label>
+               <label>
+                  <input type="radio" name="purpose" value="suggestion"> Website Suggestion
+               </label>
+            </fieldset>
+
+            <div class="form-group">
+               <label for="message">Message:</label>
+               <textarea id="message" name="user_message" rows="5" required></textarea>
+            </div>
+
+            <div class="form-group checkbox">
+               <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+               <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+         </form>
+      </section>
+
+   </main>
+
+   <footer>
+      <p>© 2026 | RAFTING PLC | Samuel Udueya</p>
+      <nav class="socialmedia">
+         <a href="https://www.facebook.com"><img src="./images/socialicons/facebook.png"
+              alt="facebook icon"></a>
+         <a href="https://www.instagram.com"><img src="./images/socialicons/instagram.jpg"
+              alt="instagram icon"></a>
+         <a href="https://www.x.com"><img src="./images/socialicons/twitter.png"
+              alt="twitter icon"></a>
+      </nav>
+   </footer>
+
+</body>
+
+</html>
