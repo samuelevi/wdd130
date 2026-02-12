@@ -195,7 +195,6 @@ main {
    display: block;
 }
 
-/* Consolidated .profiles-grid rule */
 .profiles-grid {
    display: flex;
    justify-content: space-around;
@@ -316,4 +315,321 @@ footer {
    height: 40px;
    padding: 5px;
    background-color: var(--white);
+}
+
+.newsletter {
+   background-color: var(--off-white);
+   padding: 30px;
+   margin: 30px 0;
+   border: 1px solid var(--light-gray);
+   text-align: center;
+}
+
+.newsletter h2 {
+   margin-bottom: 15px;
+}
+
+.newsletter p {
+   margin-bottom: 20px;
+   line-height: 1.6;
+   color: var(--accent1-color);
+}
+
+.newsletter-form {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   max-width: 400px;
+   margin: 0 auto;
+}
+
+.newsletter-form .form-group {
+   margin-bottom: 0;
+}
+
+.newsletter-form .form-group label {
+   text-align: left;
+}
+
+.newsletter-form .form-group input {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid var(--light-gray);
+   font-family: var(--body-font);
+}
+
+.cta-section {
+   background-color: var(--primary-color);
+   color: var(--white);
+   padding: 30px;
+   margin: 30px 0;
+   text-align: center;
+   border-radius: 5px;
+}
+
+.cta-section h2 {
+   background-color: transparent;
+   color: var(--white);
+   margin: 0 0 15px 0;
+}
+
+.cta-section p {
+   color: var(--white);
+   margin-bottom: 20px;
+   font-size: 1.1em;
+}
+
+.cta-button {
+   display: inline-block;
+   background-color: var(--accent1-color);
+   color: var(--white);
+   padding: 12px 30px;
+   text-decoration: none;
+   font-weight: bold;
+   border-radius: 5px;
+   transition: background-color 0.3s;
+   font-size: 1.1em;
+}
+
+.cta-button:hover {
+   background-color: var(--white);
+   color: var(--primary-color);
+}
+
+.offerings {
+   margin: 40px 0;
+}
+
+.offerings h2 {
+   margin-bottom: 30px;
+}
+
+.offerings-grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 20px;
+   margin: 0 16px;
+}
+
+.offering-card {
+   background-color: var(--off-white);
+   border: 1px solid var(--light-gray);
+   padding: 20px;
+   text-align: center;
+   transition: box-shadow 0.3s;
+}
+
+.offering-card:hover {
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.offering-card img {
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+   margin-bottom: 15px;
+}
+
+.offering-card h3 {
+   font-family: var(--heading-font);
+   color: var(--accent1-color);
+   margin-bottom: 10px;
+   font-size: 1.3em;
+}
+
+.offering-card p {
+   line-height: 1.6;
+   color: var(--accent1-color);
+   font-size: 0.95em;
+}
+
+.trips-cta {
+   background-color: var(--accent1-color);
+   color: var(--white);
+   padding: 20px;
+   margin: 20px 0;
+   text-align: center;
+   border-radius: 5px;
+}
+
+.trips-cta p {
+   margin: 0;
+   font-size: 1.1em;
+}
+
+.cta-link {
+   color: var(--white);
+   text-decoration: underline;
+   font-weight: bold;
+   transition: color 0.3s;
+}
+
+.cta-link:hover {
+   color: var(--primary-color);
+}
+
+.trip-descriptions {
+   margin: 40px 0;
+}
+
+.trip-descriptions h2 {
+   margin-bottom: 30px;
+}
+
+.trips-grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 20px;
+   margin: 0 16px;
+}
+
+.trip-card {
+   background-color: var(--off-white);
+   border: 1px solid var(--light-gray);
+   padding: 20px;
+   transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.trip-card:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.trip-card img {
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+   margin-bottom: 15px;
+   display: block;
+}
+
+.trip-card h3 {
+   font-family: var(--heading-font);
+   color: var(--accent1-color);
+   margin-bottom: 10px;
+   font-size: 1.2em;
+}
+
+.trip-card p {
+   line-height: 1.6;
+   color: var(--accent1-color);
+   margin-bottom: 10px;
+   font-size: 0.95em;
+}
+
+.trip-card p strong {
+   color: var(--primary-color);
+}
+
+.trips-table-section {
+   margin: 40px 0;
+}
+
+.trips-table-section h2 {
+   margin-bottom: 20px;
+}
+
+.trips-table {
+   width: 100%;
+   border-collapse: collapse;
+   margin: 0 16px;
+   background-color: var(--white);
+}
+
+.trips-table thead {
+   background-color: var(--accent1-color);
+}
+
+.trips-table th {
+   color: var(--white);
+   padding: 15px;
+   text-align: left;
+   font-family: var(--heading-font);
+   font-weight: bold;
+   border: 1px solid var(--accent1-color);
+}
+
+.trips-table td {
+   padding: 12px 15px;
+   border: 1px solid var(--light-gray);
+   color: var(--accent1-color);
+   line-height: 1.5;
+}
+
+.trips-table tbody tr:nth-child(even) {
+   background-color: var(--off-white);
+}
+
+.trips-table tbody tr:hover {
+   background-color: #e8f0f0;
+}
+
+@media (max-width: 900px) {
+
+   header,
+   main,
+   footer {
+      width: 100%;
+      padding: 0 10px;
+   }
+
+   .offerings-grid {
+      grid-template-columns: 1fr;
+      margin: 0;
+   }
+
+   .trips-grid {
+      grid-template-columns: 1fr;
+      margin: 0;
+   }
+
+   .adventure-gallery {
+      flex-wrap: wrap;
+      margin: 0;
+   }
+
+   .trips-table {
+      margin: 0;
+      font-size: 0.9em;
+   }
+
+   .trips-table th,
+   .trips-table td {
+      padding: 10px;
+   }
+}
+
+@media (max-width: 600px) {
+   nav ul {
+      flex-direction: column;
+      gap: 5px;
+   }
+
+   nav a {
+      padding: 5px 10px;
+      font-size: 0.9em;
+   }
+
+   .newsletter-form {
+      max-width: 100%;
+   }
+
+   .cta-button {
+      padding: 10px 20px;
+      font-size: 1em;
+   }
+
+   .offering-card img,
+   .trip-card img {
+      height: 150px;
+   }
+
+   .trips-table {
+      font-size: 0.8em;
+   }
+
+   .trips-table th,
+   .trips-table td {
+      padding: 8px;
+   }
 }
